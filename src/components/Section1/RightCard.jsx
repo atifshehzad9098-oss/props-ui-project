@@ -1,0 +1,15 @@
+import React from 'react'
+import RightCardContent from './RightCardContent';
+
+
+const RightCard = (props) => {
+  return (
+    <div className='h-full w-70 shrink-0 overflow-hidden relative bg-blue-500 rounded-4xl'>
+      <img className='h-full w-full object-cover' src={props.img} alt="" />
+      
+      <RightCardContent id={props.id} color={props.color} tag={props.tag} intro={props.intro} />
+    </div>
+  )
+}
+
+export default RightCard
